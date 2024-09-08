@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 
 const config: Config = {
   content: [
@@ -8,6 +10,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        appBlue:"#4078cb",
+      },
+      spacing:{
+        "6.25rem":"6.25rem",
+        "1.25rem":"1.25rem",
+      },
+      fontFamily: {
+        bricolageGrotesque: ["var(--bricolageGrotesque)", ...fontFamily.sans],
+        inter: ["var(--inter)", ...fontFamily.sans],
+        dmSans: ["var(--DM_Sans)", ...fontFamily.sans],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
