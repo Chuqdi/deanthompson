@@ -1,10 +1,12 @@
 type props = {
   variant: "secondary" | "primary";
   title: string;
+  onClick?: () => void;
 } & React.ComponentProps<"button">;
-function Button ({ variant, title, ...rest }: props) {
+function Button({ onClick, variant, title, ...rest }: props) {
   return (
     <button
+      onClick={onClick}
       {...rest}
       className={`
             w-full 
