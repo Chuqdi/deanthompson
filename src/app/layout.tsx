@@ -23,8 +23,8 @@ const DMSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Hooked",
-  description: "",
+  title: "Dean Hurst Thompson",
+  description: "Dean Hurst Thompson, with over 24 years experience working as a financial consultant, Digital Assets Manager/Stockbroker and investment advisor for some of the top trading firms in Wall Street.",
 };
 
 
