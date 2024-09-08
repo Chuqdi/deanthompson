@@ -56,7 +56,7 @@ const responsive = {
           Testimonials
         </h5>
         <h3 className="text-center text-white font-inter w-full md:w-2/5 mx-auto">
-          Do not take my words, what does my  <span className="text-appBlue">clients</span> say about me⁉️
+          Do not take my words, what does my  <span className="text-appBlue">clients</span> say about me?
         </h3>
       </div>
       <Carousel responsive={responsive}>
