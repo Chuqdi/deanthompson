@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main className=" bg-black">
       <BannerSection />
+      
       <ResumeSection />
       <ExperienceSection />
       <TestmoniesSection />
