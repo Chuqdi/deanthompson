@@ -36,21 +36,22 @@ function Main() {
       id="contact"
       className="px-1.25rem md:px-6.25rem bg-[#212121] py-6.25rem w-full"
     >
-      <div>
-        <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
-          Hire me
-        </h5>
-
-        <h3
+      <div className="flex flex-col gap-4">
+        <div
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/DeanHurstThompson2.jpeg)",
+              "url(/images/DeanHurstThompson2.jpeg)",
             backgroundSize: "cover",
             backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
           }}
-          className="text-center text-white font-inter w-full mx-auto h-auto md:h-[20rem] rounded-lg justify-center items-center flex p-2  mt-5"
-        >
+          className="w-full h-[30rem]"
+        />
+        <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
+          Hire me
+        </h5>
+
+        <h3 className="text-center text-white font-inter w-full mx-auto h-auto md:h-[20rem] ">
           I{"'"}m Dean Hurst Thompson, a financial advisor With over 24 years of
           experience in financial consulting, digital assets management, and
           stockbroking for some of the most prestigious firms on Wall Street, I
