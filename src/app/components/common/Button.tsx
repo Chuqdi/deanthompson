@@ -1,9 +1,10 @@
 type props = {
   variant: "secondary" | "primary";
   title: string;
+  disabled?: boolean;
   onClick?: () => void;
 } & React.ComponentProps<"button">;
-function Button({ onClick, variant, title, ...rest }: props) {
+function Button({ onClick,disabled, variant, title, ...rest }: props) {
   return (
     <button
       onClick={onClick}
@@ -14,13 +15,16 @@ function Button({ onClick, variant, title, ...rest }: props) {
             flex justify-center items-center
             font-bricolageGrotesque rounded font-bold
             ${
+              disabled && 'opacity-80 pointer-events-none'
+            }
+            ${
               variant === "primary"
                 ? "bg-appBlue text-white"
                 : " bg-white text-black "
             }
             `}
     >
-      {title}
+      {disabled?"Loading...":title}
     </button>
   );
 }

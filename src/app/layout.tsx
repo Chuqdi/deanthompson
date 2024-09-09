@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, DM_Sans, } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/ui/Navbar";
+import Main from "./Main";
+
+
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -33,10 +35,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
     <html lang="en">
       <body className={`${bricolageGrotesque.variable} ${interFont.variable} ${DMSans.variable}`}>
-        {children}</body>
+        <Main>
+          {children}
+        </Main>
+      </body>
+     
     </html>
   );
 }

@@ -1,9 +1,23 @@
+"use client";
 import Link from "next/link";
 import Button from "../common/Button";
 import Input from "../common/Input";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { FormEvent, useState } from "react";
+//@ts-ignore
+import { useAlert } from "react-alert";
+import axios from "axios";
+import { BACKEND_URL } from "@/app/config";
 
 function Main() {
+  const [loading, setLoading] = useState(false);
+  const alert = useAlert();
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  });
   const socials = [
     {
       icon: "logos:whatsapp-icon",
@@ -31,27 +45,47 @@ function Main() {
       title: "Call me on +1(571)630-2827",
     },
   ];
+
+  // path(ROOT_URL + "test_email", SendTestEmail.as_view()),
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const { first_name, last_name, email, message } = formData;
+    if (first_name && last_name && email && message) {
+      setLoading(true);
+      axios
+        .post(`${BACKEND_URL}test_email`, formData)
+        .finally(() => {
+          setLoading(false);
+          alert.success("Message sent successfully");
+          setFormData({
+            first_name: "",
+            last_name: "",
+            email: "",
+            message: "",
+          });
+        });
+      return;
+    }
+    alert.error("Please enter all fields");
+  };
   return (
     <form
+      onSubmit={onSubmit}
       id="contact"
       className="px-1.25rem md:px-6.25rem bg-[#212121] py-6.25rem w-full"
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         <div
           style={{
-            backgroundImage:
-              "url(/images/DeanHurstThompson2.jpeg)",
+            backgroundImage: "url(/images/DeanHurstThompson2.jpeg)",
             backgroundSize: "cover",
             backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
           }}
           className="w-full h-[30rem]"
         />
-        <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
-          Hire me
-        </h5>
 
-        <h3 className="text-center text-white font-inter w-full mx-auto h-auto md:h-[20rem] ">
+        <h3 className="text-center text-white font-inter w-full  ">
           I{"'"}m Dean Hurst Thompson, a financial advisor With over 24 years of
           experience in financial consulting, digital assets management, and
           stockbroking for some of the most prestigious firms on Wall Street, I
@@ -73,9 +107,9 @@ function Main() {
           landscape.
         </h3>
 
-        {/* <div
-          
-        /> */}
+        <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
+          Hire me
+        </h5>
       </div>
 
       <div className="flex flex-col gap-10 md:gap-5 md:flex-row w-full  mx-auto mt-10">
@@ -98,19 +132,44 @@ function Main() {
       <div className="flex flex-col md:flex-row gap-4 w-full mt-10">
         <div className="flex-1">
           <label>First name</label>
-          <Input placeholder="Please enter your full name" />
+          <Input
+            required
+            value={formData.first_name}
+            name="first_name"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            placeholder="Please enter your first name"
+          />
         </div>
 
         <div className="flex-1">
           <label>Last name</label>
-          <Input placeholder="Please enter your full name" />
+          <Input
+            required
+            value={formData.last_name}
+            name="last_name"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            placeholder="Please enter your last name"
+          />
         </div>
       </div>
 
       <div className="flex gap-4 w-full mt-10">
         <div className="flex-1">
           <label>Email</label>
-          <Input type="email" placeholder="Please enter your email address" />
+          <Input
+            required
+            value={formData.email}
+            name="email"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
+            type="email"
+            placeholder="Please enter your email address"
+          />
         </div>
       </div>
 
@@ -120,12 +179,17 @@ function Main() {
           <textarea
             placeholder="Enter message here..."
             className="w-full h-[8rem] rounded p-3"
+            value={formData.message}
+            name="message"
+            onChange={(e) =>
+              setFormData({ ...formData, [e.target.name]: e.target.value })
+            }
           ></textarea>
         </div>
       </div>
 
       <div className="mt-4">
-        <Button title="Send message" variant="primary" />
+        <Button disabled={loading} title="Send message" variant="primary" />
       </div>
     </form>
   );
