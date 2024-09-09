@@ -45,7 +45,7 @@ function Main() {
         </h3>
       </div>
 
-      <div className="grid grid-cols-2 md:flex flex-col gap-5 md:flex-row w-full  mx-auto mt-10">
+      <div className="flex flex-col gap-10 md:gap-5 md:flex-row w-full  mx-auto mt-10">
         {socials.map((social, index) => (
           <div className="flex-1 " key={`social_${index}`}>
             <Link
