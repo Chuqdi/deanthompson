@@ -40,8 +40,17 @@ function Main() {
         <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
           Hire me
         </h5>
-     
-        <h3 className="text-center text-white font-inter w-full mx-auto">
+
+        <h3
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(/images/DeanHurstThompson2.jpeg)",
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="text-center text-white font-inter w-full mx-auto h-auto md:h-[20rem] rounded-lg justify-center items-center flex p-2  mt-5"
+        >
           I{"'"}m Dean Hurst Thompson, a financial advisor With over 24 years of
           experience in financial consulting, digital assets management, and
           stockbroking for some of the most prestigious firms on Wall Street, I
@@ -50,28 +59,22 @@ function Main() {
           consistently delivered exceptional results across all market
           conditions. In 2016, I pioneered a tailored investment program for
           private investors, focusing on emerging markets and innovative
-          financial solutions. This program has been a cornerstone in my
-          clients{"'"} portfolios, boasting a remarkable 99% success rate. My
+          financial solutions. This program has been a cornerstone in my clients
+          {"'"} portfolios, boasting a remarkable 99% success rate. My
           commitment to transparency, ethical practices, and personalized
           service has enabled me to help over 1,000 individuals build and
           safeguard their financial futures, transforming their dreams into
-          reality. Whether you{"'"}re looking to grow your wealth, diversify your
-          portfolio, or secure a more prosperous future, I offer a proven track
-          record of delivering results. My passion for financial success goes
-          beyond numbers—it{"'"}s about empowering my clients with the knowledge and
-          confidence to thrive in an ever-changing financial landscape.
+          reality. Whether you{"'"}re looking to grow your wealth, diversify
+          your portfolio, or secure a more prosperous future, I offer a proven
+          track record of delivering results. My passion for financial success
+          goes beyond numbers—it{"'"}s about empowering my clients with the
+          knowledge and confidence to thrive in an ever-changing financial
+          landscape.
         </h3>
 
-        <div
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/images/DeanHurstThompson2.jpeg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="w-full  h-[25rem] rounded-lg mt-3"
-        />
+        {/* <div
+          
+        /> */}
       </div>
 
       <div className="flex flex-col gap-10 md:gap-5 md:flex-row w-full  mx-auto mt-10">
