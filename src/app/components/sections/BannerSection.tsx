@@ -7,7 +7,7 @@ function Main() {
   const router = useRouter();
   return (
     <div
-    className="h-[45rem]"
+    className="h-auto md:h-[45rem]"
       style={{
         
         backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/DeanHurstThompson.jpeg)",
@@ -18,7 +18,7 @@ function Main() {
     >
       <Navbar />
 
-      <div className="flex flex-col-reverse md:flex-row  px-1.25rem md:px-6.25rem items-center py-6.25rem gap-16 w-4/5 ">
+      <div className="flex flex-col-reverse md:flex-row  px-1.25rem md:px-6.25rem items-center py-6.25rem gap-16 w-full md:w-4/5 ">
         <div className="flex-[1.5] flex-col gap-8 flex">
           <h5 className="text-base font-inter text-white w-3/5">
             Dean Hurst Thompson
