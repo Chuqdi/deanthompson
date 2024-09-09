@@ -38,11 +38,40 @@ function Main() {
     >
       <div>
         <h5 className="text-white text-center font-bold font-bricolageGrotesque text-5xl uppercase">
-          Contact me
+          Hire me
         </h5>
-        <h3 className="text-center text-white font-inter w-4/5 md:w-2/5 mx-auto">
-         You could write me a direct message or use my social accounts.
+     
+        <h3 className="text-center text-white font-inter w-full mx-auto">
+          I{"'"}m Dean Hurst Thompson, a financial advisor With over 24 years of
+          experience in financial consulting, digital assets management, and
+          stockbroking for some of the most prestigious firms on Wall Street, I
+          bring a wealth of expertise to help clients achieve financial success.
+          My extensive research and carefully crafted strategies have
+          consistently delivered exceptional results across all market
+          conditions. In 2016, I pioneered a tailored investment program for
+          private investors, focusing on emerging markets and innovative
+          financial solutions. This program has been a cornerstone in my
+          clients' portfolios, boasting a remarkable 99% success rate. My
+          commitment to transparency, ethical practices, and personalized
+          service has enabled me to help over 1,000 individuals build and
+          safeguard their financial futures, transforming their dreams into
+          reality. Whether you're looking to grow your wealth, diversify your
+          portfolio, or secure a more prosperous future, I offer a proven track
+          record of delivering results. My passion for financial success goes
+          beyond numbers—it's about empowering my clients with the knowledge and
+          confidence to thrive in an ever-changing financial landscape.
         </h3>
+
+        <div
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/images/DeanHurstThompson2.jpeg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="w-full  h-[25rem] rounded-lg mt-3"
+        />
       </div>
 
       <div className="flex flex-col gap-10 md:gap-5 md:flex-row w-full  mx-auto mt-10">
@@ -62,7 +91,7 @@ function Main() {
         ))}
       </div>
 
-      <div className="flex gap-4 w-full mt-10">
+      <div className="flex flex-col md:flex-row gap-4 w-full mt-10">
         <div className="flex-1">
           <label>First name</label>
           <Input placeholder="Please enter your full name" />
