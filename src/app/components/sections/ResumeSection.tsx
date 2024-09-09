@@ -26,7 +26,7 @@ function Main () {
     
   ];
   return (
-    <div className="flex flex-col md:flex-row items-start gap-8 px-1.25rem md:px-6.25rem pb-6.25rem">
+    <div className="mt-4 md:-mt-10 flex flex-col md:flex-row items-start gap-8 px-1.25rem md:px-6.25rem pb-6.25rem">
       {options.map((option, index) => (
         <SingleOption
           isMiddle={index === 1}

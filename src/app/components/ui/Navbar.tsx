@@ -12,7 +12,7 @@ function Main () {
   const navbarOptions = useNavbar();
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   return (
-    <div className="flex justify-between items-center px-1.25rem md:px-6.25rem h-[7rem] border-b-[1px] border-b-[#ffffffb8] ">
+    <div className="flex justify-between items-center px-1.25rem md:px-6.25rem h-[7rem] -b-[1px] border-b-[#ffffffb8] ">
       <h4 className="text-white font-bricolageGrotesque text-2xl">
         DEAN .H. THOMPSON
       </h4>
