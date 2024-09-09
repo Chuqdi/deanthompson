@@ -23,6 +23,7 @@ function Main () {
         "On first contact, we analyze your financial situation we analyze your financial situation, and we have series of consultation sessions to determine your best path to financial freedom while achieving your retirement goals.",
       icon: "mdi:airplane-find",
     },
+    
   ];
   return (
     <div className="flex flex-col md:flex-row items-start gap-8 px-1.25rem md:px-6.25rem pb-6.25rem">

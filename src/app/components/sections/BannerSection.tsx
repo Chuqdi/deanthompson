@@ -12,9 +12,7 @@ function  Main() {
           I’m a Financial Adviser & Broker
         </h3>
         <p className="text-white font-inter text-sm">
-          With over 24 years experience working as a financial consultant,
-          Digital Assets Manager/Stockbroker and investment advisor for some of
-          the top trading firms in Wall Street.
+        With 55 states Registeration and license and over 21 years experience working as a financial consultant, Digital Assets Manager/Stockbroker and investment advisor for individuals and some of the top trading firms in Wall Street.
         </p>
         <Button onClick={()=>router.push("/#experience")} variant="secondary" title="Check resume" />
       </div>

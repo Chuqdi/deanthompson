@@ -10,7 +10,7 @@ function FooterSection() {
     },
     {
       icon: "skill-icons:instagram",
-      link: "",
+      link: "https://www.instagram.com/dean.h.thompson?igsh=MXNpYTNndmE0b2NtNw==",
     },
     {
         icon:"prime:twitter",
@@ -21,7 +21,7 @@ function FooterSection() {
     <div className="w-full">
       <div className="bg-black w-full flex justify-center items-center gap-8 h-[7rem] border-b-[1px] border-b-[#5f5f5f]">
         {socials.map((social, index) => (
-          <Link key={`social_link_${index}`} href={social.link}>
+          <Link target="__blank" key={`social_link_${index}`} href={social.link}>
             <Icon color="#fff" icon={social.icon} className="w-12 h-12 hover:scale-110 transition-all" />
           </Link>
         ))}

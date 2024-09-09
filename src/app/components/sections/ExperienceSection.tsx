@@ -20,6 +20,25 @@ const experiences = [
     title:"HARTFORD SECURITIES DISTRIBUTION (CRD# 37819)",
     description2: "BROKER & INVESTMENT ADVISER",
     date: "2002 - 2015",
+  },
+  {
+    title:"J.P. MORGAN SECURITIES LLC (CRD#:79)IRVINE, CA"
+  },
+  {
+    title:"BARCLAYS CAPITAL INC. (CRD#:19714) LOS ANGELES, CA",
+    
+  },
+  {
+    title:"UBS FINANCIAL SERVICES INC. (CRD#:8174)LOS ANGELES, CA"
+  },
+  {
+    title:"UBS FINANCIAL SERVICES INC. (CRD#:8174)LOS ANGELES, CA"
+  },
+  {
+    title:"LEHMAN BROTHERS INC. (CRD#:7506) LOS ANGELES, CA"
+  },
+  {
+    title:"MORGAN STANLEY (CRD#:7556) SALT LK CITY, UT"
   }
 ];
 
@@ -44,7 +63,7 @@ function Experience({ ex }: { ex: (typeof experiences)[0] }) {
   return (
     <div>
       <div
-        onClick={() => setShowing(!showing)}
+        // onClick={() => setShowing(!showing)}
         className="bg-appBlue cursor-pointer h-auto md:h-[3rem] flex justify-between items-center text-xl p-3 text-white font-bricolageGrotesque rounded-md"
       >
         <h4>{ex.title}</h4>
