@@ -51,14 +51,14 @@ function Main() {
           conditions. In 2016, I pioneered a tailored investment program for
           private investors, focusing on emerging markets and innovative
           financial solutions. This program has been a cornerstone in my
-          clients' portfolios, boasting a remarkable 99% success rate. My
+          clients{"'"} portfolios, boasting a remarkable 99% success rate. My
           commitment to transparency, ethical practices, and personalized
           service has enabled me to help over 1,000 individuals build and
           safeguard their financial futures, transforming their dreams into
-          reality. Whether you're looking to grow your wealth, diversify your
+          reality. Whether you{"'"}re looking to grow your wealth, diversify your
           portfolio, or secure a more prosperous future, I offer a proven track
           record of delivering results. My passion for financial success goes
-          beyond numbers—it's about empowering my clients with the knowledge and
+          beyond numbers—it{"'"}s about empowering my clients with the knowledge and
           confidence to thrive in an ever-changing financial landscape.
         </h3>
 
