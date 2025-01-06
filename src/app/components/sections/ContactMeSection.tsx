@@ -21,7 +21,7 @@ function Main() {
   const socials = [
     {
       icon: "logos:whatsapp-icon",
-      link: "https://wa.link/bkbjkt",
+      link: "https://wa.me/15719121654",
       title: "WhatsApp",
     },
     {
@@ -31,19 +31,19 @@ function Main() {
     },
     {
       icon: "logos:telegram",
-      link: "https://t.me/+1(571)630-2827",
-      title: "+1(571)630-2827",
+      link: "https://t.me/Deanhurstthompson",
+      title: "Telegram",
     },
     {
       icon: "streamline:send-email-solid",
       link: "mailto:me@deanhurstthompson.com",
       title: "me@deanhurstthompson.com",
     },
-    {
-      icon: "subway:call-1",
-      link: "tel:+1(571)630-2827",
-      title: "Call me on +1(571)630-2827",
-    },
+    // {
+    //   icon: "subway:call-1",
+    //   link: "tel:+1 (571) 912-1654",
+    //   title: "Call me on +1 (571) 912-1654",
+    // },
   ];
 
   // path(ROOT_URL + "test_email", SendTestEmail.as_view()),
