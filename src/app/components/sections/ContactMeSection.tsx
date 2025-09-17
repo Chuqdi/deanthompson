@@ -18,11 +18,13 @@ function Main() {
     email: "",
     message: "",
   });
+  
+  const smsUrl =  `sms:+15879121654`;
   const socials = [
     {
-      icon: "logos:whatsapp-icon",
-      link: "https://wa.me/15879121654",
-      title: "WhatsApp",
+      icon: "fa-solid:sms",
+      link: smsUrl,
+      title: "Via SMS",
     },
     {
       icon: "skill-icons:instagram",
