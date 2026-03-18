@@ -21,7 +21,7 @@ function Main() {
   const socials = [
     {
       icon: "logos:whatsapp-icon",
-      link: "https://wa.link/bkbjkt",
+      link: "https://wa.me/12124313514",
       title: "WhatsApp",
     },
     {
