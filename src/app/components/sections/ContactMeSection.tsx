@@ -29,6 +29,11 @@ function Main() {
       link: "https://www.instagram.com/dean.h.thompson?igsh=MXNpYTNndmE0b2NtNw==",
       title: "Instagram",
     },
+     {
+      icon: "logos:tiktok-icon",
+      link: "https://www.tiktok.com/@dean.hurstthompson?_r=1&_t=ZP-94nJCMAQfza",
+      title: "Tiktok",
+    },
     {
       icon: "logos:telegram",
       link: "https://t.me/Deanhurst247finance",
