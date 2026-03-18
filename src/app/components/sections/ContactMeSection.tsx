@@ -31,7 +31,7 @@ function Main() {
     },
     {
       icon: "logos:telegram",
-      link: "https://t.me/+1(571)630-2827",
+      link: "https://t.me/Deanhurst247finance",
       title: "+1(571)630-2827",
     },
     {
@@ -41,8 +41,8 @@ function Main() {
     },
     {
       icon: "subway:call-1",
-      link: "tel:+1(571)630-2827",
-      title: "Call me on +1(571)630-2827",
+      link: "tel:+1212-431-3514",
+      title: "Call me on +1 212-431-3514",
     },
   ];
 
