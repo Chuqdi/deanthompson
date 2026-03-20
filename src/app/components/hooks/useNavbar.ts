@@ -14,6 +14,10 @@ function useNavbar() {
       label: "Contact",
       link: "/#contact",
     },
+    {
+      label:"Certification",
+      link:"/#certification"
+    }
   ];
 }
 export default useNavbar;

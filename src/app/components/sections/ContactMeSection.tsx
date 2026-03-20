@@ -37,7 +37,7 @@ function Main() {
     {
       icon: "logos:telegram",
       link: "https://t.me/Deanhurst247finance",
-      title: "+1(571)630-2827",
+      title: "Telegram",
     },
     {
       icon: "streamline:send-email-solid",
