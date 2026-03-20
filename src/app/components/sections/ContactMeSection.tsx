@@ -47,7 +47,7 @@ function Main() {
     {
       icon: "subway:call-1",
       link: "tel:+1212-431-3514",
-      title: "Call me on +1 212-431-3514",
+      title: "Call me",
     },
   ];
 
