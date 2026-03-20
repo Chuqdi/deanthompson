@@ -21,7 +21,7 @@ function Main() {
   const socials = [
     {
       icon: "logos:whatsapp-icon",
-      link: "https://wa.me/12124313514",
+      link: "https://wa.me/15813352306",
       title: "WhatsApp",
     },
     {
@@ -36,7 +36,7 @@ function Main() {
     },
     {
       icon: "logos:telegram",
-      link: "https://t.me/Deanhurst247finance",
+      link: "https://t.me/Dean247finance",
       title: "Telegram",
     },
     {
