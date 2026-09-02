@@ -36,7 +36,7 @@ function Main() {
     },
     {
       icon: "logos:telegram",
-      link: "https://t.me/Dean247finance",
+      link: "https://t.me/DeanHurstThompson",
       title: "Telegram",
     },
     {
